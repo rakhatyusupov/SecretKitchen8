@@ -132,12 +132,21 @@ canvas {
 
 /*gui item*/
 
-.gui-item {
+.gui-item-row {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding: 8px 0px;
+  border-top: 1px solid #3c3c3c;
+}
+
+.gui-item-colum {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
   padding: 8px 0px;
   border-top: 1px solid #3c3c3c;
 }

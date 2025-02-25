@@ -11,6 +11,7 @@ const sketch = (p) => {
 
   p.setup = () => {
     const canvas = p.createCanvas(1920, 1920).canvas;
+    p.pixelDensity(1);
     canvas.id = "mainCanvas";
     p.textAlign(p.CENTER, p.CENTER);
 
@@ -20,10 +21,8 @@ const sketch = (p) => {
     canvas.style.borderRadius = "16px";
     canvas.style.boxShadow = "0 4px 30px rgba(0, 0, 0, 0.5)";
 
-    // Initialize startY position
     params.startY = p.height / 20;
 
-    // Get all controls
     const controls = {
       angle: document.getElementById("angle"),
       angleSpeed: document.getElementById("angleSpeed"),
@@ -32,7 +31,6 @@ const sketch = (p) => {
       text: document.getElementById("text"),
     };
 
-    // Add event listeners
     Object.entries(controls).forEach(([key, input]) => {
       input.addEventListener("input", (e) => {
         params[key] =
