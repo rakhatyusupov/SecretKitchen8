@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Kitchen</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Load p5.js from local file -->
+    <script src="p5.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="navigation-wrapper">
+        <nav class="navbar">
+          <a href="https://secret-kitchen.ru/moskva" class="logo"
+            >Secret Kitchen</a
+          >
+          <button class="nav-button">
+            <a href="https://secret-kitchen.ru/moskva/page/loyalty">Кешбек</a>
+          </button>
+        </nav>
+      </div>
+
+      <div class="content">
+        <div class="canvas-parent">
+          <!-- Existing canvas element -->
+        </div>
+        <div class="controls-wrapper">
+          <div class="button-wrapper">
+            <button id="share-button">Поделиться</button>
+          </div>
+          <div class="custom-gui">
+            <div class="gui-headder"><h3>Ручки</h3></div>
+            <div class="gui-contents">
+              <div class="gui-item">
+                <label for="angle">Angle Speed:</label>
+                <input type="range" id="angle" min="1" max="10" value="1" />
+              </div>
+              <div class="gui-item">
+                <label for="angleSpeed">Rotation Speed:</label>
+                <input
+                  type="range"
+                  id="angleSpeed"
+                  min="1"
+                  max="10"
+                  value="1"
+                />
+              </div>
+              <div class="gui-item">
+                <label for="radius">Radius:</label>
+                <input type="range" id="radius" min="10" max="200" value="50" />
+              </div>
+              <div class="gui-item">
+                <label for="color">Color:</label>
+                <input type="color" id="color" value="#ff0000" />
+              </div>
+              <div class="gui-item">
+                <label for="text">Text:</label>
+                <input type="text" id="text" value="Secret Kitchen" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load scripts AFTER DOM elements -->
+      <script src="share.js"></script>
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>
