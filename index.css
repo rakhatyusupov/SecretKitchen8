@@ -142,13 +142,30 @@ canvas {
   border-top: 1px solid #3c3c3c;
 }
 
-.gui-item-colum {
+.gui-item-column {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: start;
   padding: 8px 0px;
   border-top: 1px solid #3c3c3c;
+  gap: 8px;
+}
+
+#text {
+  padding: 8px 12px;
+  border-radius: 16px;
+  width: 100%;
+  border: 1px solid #3c3c3c;
+  background: rgba(55, 55, 55, 0.6);
+  color: white;
+}
+
+#color {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #3c3c3c;
+  margin: 0;
 }
 
 @media (max-width: 1000px) {

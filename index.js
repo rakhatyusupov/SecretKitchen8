@@ -66,14 +66,13 @@ const sketch = (p) => {
   };
 
   p.draw = () => {
-    // p.background(0);
-    p.fill(params.color);
-    drawSwirl();
+    //
 
-    // Draw text
     p.fill(255);
     p.textSize(32);
     p.text(params.text, p.width / 2, p.height / 2);
+    p.fill(params.color);
+    drawSwirl();
   };
 
   p.windowResized = () => {
